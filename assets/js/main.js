@@ -15,15 +15,17 @@
   /* ---- Menu mobile ---- */
   var burger = document.getElementById("burger");
   var links = document.getElementById("navLinks");
+  function setMenu(open) {
+    links.classList.toggle("open", open);
+    burger.classList.toggle("x", open);
+    nav.classList.toggle("menu-open", open);
+    document.body.style.overflow = open ? "hidden" : "";
+  }
   burger.addEventListener("click", function () {
-    links.classList.toggle("open");
-    burger.classList.toggle("x");
+    setMenu(!links.classList.contains("open"));
   });
   links.querySelectorAll("a").forEach(function (a) {
-    a.addEventListener("click", function () {
-      links.classList.remove("open");
-      burger.classList.remove("x");
-    });
+    a.addEventListener("click", function () { setMenu(false); });
   });
 
   /* ---- Parallaxe hero ---- */
