@@ -199,7 +199,7 @@ p{color:var(--muted);margin-bottom:14px;font-weight:400;font-size:1.04rem}
 .espaces .eyebrow{color:var(--gold-soft)}
 .espaces .h2{color:var(--cream)}
 .espaces .lead{color:rgba(246,241,231,.8)}
-.espaces__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.espaces__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .espace{
   border:1px solid rgba(246,241,231,.16);border-radius:var(--r);
   padding:42px 28px;text-align:center;transition:.5s var(--ease);
