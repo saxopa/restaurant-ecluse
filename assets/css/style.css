@@ -242,53 +242,6 @@ p{color:var(--muted);margin-bottom:14px;font-weight:400;font-size:1.04rem}
 .menu-card--feature .menu-card__sub{color:rgba(246,241,231,.6)}
 .carte__foot{text-align:center;margin-top:44px;font-size:.95rem;color:var(--muted);letter-spacing:.04em}
 
-/* ---------- Menu Fête des Mères ---------- */
-.fete-menu{
-  max-width:880px;margin:0 auto;background:var(--cream-2);
-  border:1px solid rgba(198,161,91,.35);border-radius:14px;
-  padding:56px 48px;box-shadow:var(--shadow);position:relative;
-}
-.fete-menu::before,.fete-menu::after{
-  content:"";position:absolute;left:50%;transform:translateX(-50%);
-  width:60px;height:1px;background:var(--gold);
-}
-.fete-menu::before{top:24px}
-.fete-menu::after{bottom:24px}
-.fete-menu__price{text-align:center;margin-bottom:48px;padding-bottom:32px;border-bottom:1px dotted rgba(76,102,87,.3)}
-.fete-menu__price-num{
-  display:block;font-family:var(--ff-serif);font-size:3.4rem;
-  color:var(--gold);font-weight:500;line-height:1;
-}
-.fete-menu__price-sub{
-  display:block;margin-top:14px;font-size:.78rem;letter-spacing:.22em;
-  text-transform:uppercase;color:var(--sage-deep);font-weight:500;
-}
-.fete-menu__sections{display:flex;flex-direction:column;gap:38px}
-.fete-menu__section{text-align:center}
-.fete-menu__title{
-  font-family:var(--ff-serif);font-size:1.5rem;font-weight:500;
-  color:var(--sage-deep);margin-bottom:20px;letter-spacing:.04em;
-}
-.fete-menu__title::before,.fete-menu__title::after{
-  content:"❦";color:var(--gold);font-size:.7em;margin:0 14px;
-  vertical-align:middle;opacity:.7;
-}
-.fete-menu__list{list-style:none;margin:0;padding:0}
-.fete-menu__list li{
-  padding:10px 0;font-size:1.02rem;color:var(--muted);line-height:1.55;
-}
-.fete-menu__list li strong{
-  display:block;font-family:var(--ff-serif);font-size:1.2rem;
-  font-weight:500;color:var(--ink);letter-spacing:.06em;
-  text-transform:uppercase;margin-bottom:4px;
-}
-.fete-menu__list li span{font-style:italic;color:var(--muted)}
-@media (max-width:720px){
-  .fete-menu{padding:44px 24px}
-  .fete-menu__price-num{font-size:2.6rem}
-  .fete-menu__title{font-size:1.3rem}
-}
-
 /* ---------- Apériquets ---------- */
 .aperiquets{background:var(--sage-deep);color:var(--cream);overflow:hidden}
 .aperiquets__script{color:var(--gold-soft);text-align:left;margin:-10px 0 18px}
