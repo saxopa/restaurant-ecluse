@@ -137,7 +137,7 @@
       requestAnimationFrame(function () {
         requestAnimationFrame(function () { toast.classList.add("show"); });
       });
-      hideTimer = setTimeout(hideToast, 9000); // s'efface vite, sans gêner
+      hideTimer = setTimeout(hideToast, 18000); // reste bien visible
     }
     toastClose.addEventListener("click", hideToast);
     setTimeout(showToast, 2200); // apparaît après l'arrivée sur la page
