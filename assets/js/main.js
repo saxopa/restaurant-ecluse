@@ -121,4 +121,25 @@
   }, { threshold: 0.4 });
   var statsEl = document.querySelector(".stats");
   if (statsEl) cio.observe(statsEl);
+
+  /* ---- Toast annonce jardin ---- */
+  var toast = document.getElementById("gardenToast");
+  if (toast) {
+    var toastClose = document.getElementById("toastClose");
+    var hideTimer;
+    function hideToast() {
+      clearTimeout(hideTimer);
+      toast.classList.remove("show");
+      setTimeout(function () { toast.hidden = true; }, 650);
+    }
+    function showToast() {
+      toast.hidden = false;
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () { toast.classList.add("show"); });
+      });
+      hideTimer = setTimeout(hideToast, 9000); // s'efface vite, sans gêner
+    }
+    toastClose.addEventListener("click", hideToast);
+    setTimeout(showToast, 2200); // apparaît après l'arrivée sur la page
+  }
 })();
